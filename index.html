@@ -57,6 +57,35 @@
             capitalize("uP");
 
 
+
+            //Fourth exercise: A function that takes strings and returns the very last letter of that string
+            /*In this exercise, it has two problems:
+            1)length of string is unknown (it could be of any length, n), hence,
+            2)position of the last character would then be unknown because of 1)
+            
+            I need to solve 1) first in order to be able to solve 2)
+            
+            Also note that since the counting of positions/indexes of each character in a string starts from zero, 
+            then [length of string - 1] gives the position of the last/nth character in the string*/
+            
+            //Function declaration - creating the function
+            function lastLetter(string){
+                let text = string; //Storing the string/argument/value within the text variable
+
+                let lengthOfText = text.length; //Find the length of the text
+
+                let positionOfLastCharacter = --lengthOfText; //Prefix decrement of the length of the text gives the position of the last character in the string. Prefix since I want to use the result straight away
+
+                let result = text.charAt(positionOfLastCharacter); //store the last character in the result variable
+
+                console.log(result); //Print the result which is the last character of the string on the console
+            }
+
+            //Function call for the fourth exercise
+            /*Note that function call can be written before function declaration and still be able to run since JS internal 
+            algorithms searches for function declarations first (as an initialization stage) to create them*/
+            lastLetter("abcd");
+
         </script>
     </body>
 </html>
