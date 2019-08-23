@@ -46,7 +46,8 @@
                 let capitalizeFirstCharacter = firstCharacter.toUpperCase(); //Capitalize first character of string (firstCharacter variable) and store it in capitalizeFirstCharacter variable
                 let lowerCaseOtherCharacters = otherCharacters.toLowerCase(); //Make other characters after first character to lower case. Do this in case not all of these characters 
                                                                             //were lower case initially (i.e the nth character may have been in upper case)
-                let newString = capitalizeFirstCharacter.concat("",lowerCaseOtherCharacters); //Concatenate two strings using the concatenate method for strings
+                let newString = capitalizeFirstCharacter.concat("",lowerCaseOtherCharacters); //Concatenate two strings using the concatenate method for strings; could also concatenate 
+                                                                                             //the two strings using the binary + operator
 
                 console.log(newString); //Print the result (first character capitalized, 2nd character onwards lower cased and concatenate/joining these two as a new String)
 
