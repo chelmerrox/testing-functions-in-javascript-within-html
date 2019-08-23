@@ -32,6 +32,30 @@
             multiply(2,3);
 
             
+            
+            
+            //Third exercise: A function that takes a string and returns that string with only the first letter capitalized.
+            //Function declaration - creating the function
+            function capitalize(string){
+                let word = string; //Storing the string into the word variable 
+                
+                let firstCharacter = word.charAt(0); //Extracting the 1st character of the string (index/position = 0) and storing result in firstCharacter variable
+                let otherCharacters = word.slice(1,); //Extracting the rest of the characters of the string and storing result in otherCharacters variable. 
+                                                    //No need for second parameter as this will slice everything from 2nd character (index/position = 1) onwards 
+                                                    //to whatever index the string ends at
+                let capitalizeFirstCharacter = firstCharacter.toUpperCase(); //Capitalize first character of string (firstCharacter variable) and store it in capitalizeFirstCharacter variable
+                let lowerCaseOtherCharacters = otherCharacters.toLowerCase(); //Make other characters after first character to lower case. Do this in case not all of these characters 
+                                                                            //were lower case initially (i.e the nth character may have been in upper case)
+                let newString = capitalizeFirstCharacter.concat("",lowerCaseOtherCharacters); //Concatenate two strings using the concatenate method for strings
+
+                console.log(newString); //Print the result (first character capitalized, 2nd character onwards lower cased and concatenate/joining these two as a new String)
+
+            }
+
+            //Function call for the third exercise
+            capitalize("uP");
+
+
         </script>
     </body>
 </html>
